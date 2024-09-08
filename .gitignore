@@ -1,0 +1,16 @@
+# Ignore Node.js modules
+**/node_modules/
+
+# Ignore Python virtual environment directories
+**/env/
+**/.env/
+**/venv/
+**/.venv/
+
+# Ignore Python cache files and compiled files
+**/__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore other potential virtual environments
+**/lib/python*/site-packages/
