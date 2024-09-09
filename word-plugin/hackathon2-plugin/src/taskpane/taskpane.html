@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Word Add-in</title>
-    <link rel="stylesheet" href="taskpane.css" />
-    <script src="taskpane.js"></script>
+    <meta charset="UTF-8" />
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="./taskpane.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <button id="insertText" onclick="insertText()">Insert Text</button>
+    <div class="container">
+      <h3>Chat</h3>
+      <div id="chat-box">
+        <!-- Chat messages will be appended here -->
+      </div>
+      <div id="chat-input">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message here..."
+        />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <script src="./taskpane.js"></script>
   </body>
 </html>
